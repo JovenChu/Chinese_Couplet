@@ -1,4 +1,5 @@
 # Chinese_Couplet
+* Demo演示地址：[对王之王——中文对联生成助手](http://47.106.241.83:5500/Chinese_Couplet)
 * 具体代码分析可参考博客文章：https://jovenchu.cn/2020/07/16/2020-07-16-Chinese-Couplet/#more
 * 使用Seq2Seq的模型实现【中文对联/对句/对词】生成功能，输入上联，输出下联。
 * 中文对联数据下载：[70万中文对联/对句/对词数据](https://github.com/wb14123/couplet-dataset/releases/download/1.0/couplet.tar.gz)，分为训练集（input/target）、测试集、词表，放入项目data文件夹中，路径参考下文数据处理模块。
@@ -24,3 +25,13 @@
            output_dir='./models/output_couplet',
            restore_model=True)# 此处为True则是加载上一次模型继续训练
    ```
+
+### 模型线上化Demo
+
+地址：[对王之王——中文对联生成助手](http://47.106.241.83:5500/Chinese_Couplet)
+
+演示：
+
+![658121595107586_.pic_hd](https://tva1.sinaimg.cn/large/007S8ZIlgy1ggw6tgn0p1j30z40m8twe.jpg)
+
+![658151595107638_.pic_hd](https://tva1.sinaimg.cn/large/007S8ZIlgy1ggw6thmoodj30z40m8dxe.jpg)
